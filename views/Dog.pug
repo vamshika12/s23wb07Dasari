@@ -7,9 +7,7 @@ block content
     div(class="row")
       each item,index in results
         div(class="col-sm-2",onClick=`buy(${index})`)
-          p breed is #{item.Dog_breed}
-          p size is #{item.Dog_Size}
-          p value is #{item.Dog_value}
+          p breed is #{item.Dog_breed} size is #{item.Dog_Size} value is #{item.Dog_value}
   script.
     function buy(thing) {
       thing = thing+1;
